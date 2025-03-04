@@ -1,7 +1,7 @@
 FROM tensorflow/serving:latest
 
 # Copy model dan konfigurasi
-COPY ./outputs/serving_model /models/hatespeech-prediction-model
+COPY ./outputs/serving_model /models/hatespeech-prediction-model/1/
 # COPY ./config/prometheus.config /model_config/prometheus.config
 
 # Set environment variables
