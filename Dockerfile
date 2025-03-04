@@ -2,12 +2,12 @@ FROM tensorflow/serving:latest
 
 # Copy model dan konfigurasi
 COPY ./outputs/serving_model /models/hatespeech-prediction-model
-COPY ./config/prometheus.config /model_config/prometheus.config
+#COPY ./config/prometheus.config /model_config/prometheus.config
 
 # Set environment variables
 ENV MODEL_NAME=hatespeech-prediction-model
 ENV MODEL_BASE_PATH=/models
-ENV MONITORING_CONFIG=/model_config/prometheus.config
+#ENV MONITORING_CONFIG=/model_config/prometheus.config
 ENV PORT=8501
 
 # Buat entrypoint script
