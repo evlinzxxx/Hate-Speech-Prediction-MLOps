@@ -6,7 +6,7 @@ COPY ./outputs/serving_model /1/
 
 # Set environment variables
 ENV MODEL_NAME=hatespeech-prediction-model
-ENV MODEL_BASE_PATH=/models
+ENV MODEL_BASE_PATH=/serving_model
 #ENV MONITORING_CONFIG=/model_config/prometheus.config
 ENV PORT=8501
 
