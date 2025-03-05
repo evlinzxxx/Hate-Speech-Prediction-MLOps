@@ -8,7 +8,7 @@ COPY ./serving_model/hatespeech-prediction-model/ /models/hatespeech-prediction-
 ENV MODEL_NAME=hatespeech-prediction-model
 ENTRYPOINT ["/usr/bin/tf_serving_entrypoint.sh"]
 # ENV MONITORING_CONFIG=/model_config/prometheus.config
-# ENV PORT=8501
+ENV PORT=8501
 
 # # Buat entrypoint script
 # RUN echo '#!/bin/bash \n\n\
