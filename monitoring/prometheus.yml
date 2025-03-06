@@ -10,4 +10,4 @@ scrape_configs:
     scrape_interval: 5s
     metrics_path: /monitoring/prometheus/metrics
     static_configs:
-      - targets: ['103.190.215.94:8501']
+      - targets: ['mlops-final-submission-production-46da.up.railway.app']
