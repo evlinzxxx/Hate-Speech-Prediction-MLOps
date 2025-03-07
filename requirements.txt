@@ -158,7 +158,7 @@ sqlparse==0.4.4
 tensorboard==2.10.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow==1.5.0
+tensorflow==2.10.1
 tensorflow-data-validation==1.11.0
 tensorflow-estimator==2.10.0
 tensorflow-hub==0.12.0
