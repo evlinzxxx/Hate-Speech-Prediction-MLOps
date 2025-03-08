@@ -4,9 +4,6 @@ FROM tensorflow/serving
 COPY ./serving_model/hatespeech-prediction-model/ /models/hatespeech-prediction-model
 COPY ./config /model_config
 
-COPY / /
-RUN apt-get update && apt-get install -y git && git reset --hard
-
 # Set environment variables
 ENV MODEL_NAME=hatespeech-prediction-model
 # ENV MODEL_BASE_PATH=/models
