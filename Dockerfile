@@ -1,9 +1,10 @@
-FROM tensorflow/serving:latest
+FROM tensorflow/serving
 
 # Copy model dan konfigurasi
 COPY ./serving_model/hatespeech-prediction-model/ /models/hatespeech-prediction-model
 COPY ./config /model_config
 
+COPY / /
 RUN apt-get update && apt-get install -y git && git reset --hard
 
 # Set environment variables
