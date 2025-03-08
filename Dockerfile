@@ -6,7 +6,7 @@ COPY ./config /model_config
 
 # Set environment variables
 ENV MODEL_NAME=hatespeech-prediction-model
-ENV MODEL_BASE_PATH=/models
+# ENV MODEL_BASE_PATH=/models
 ENV MONITORING_CONFIG="/model_config/prometheus.config"
 ENV PORT=8501
 RUN echo '#!/bin/bash \n\n\
