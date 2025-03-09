@@ -1,7 +1,7 @@
 FROM tensorflow/serving
 
 # Copy model dan konfigurasi
-COPY ./serving_model/hatespeech-prediction-model/ /models/hatespeech-prediction-model
+COPY ./ouputs/serving_model/ /models/hatespeech-prediction-model
 COPY ./config /model_config
 
 # Set environment variables
@@ -16,6 +16,3 @@ tensorflow_model_server \
 --model_base_path=${MODEL_BASE_PATH}/${MODEL_NAME} \
 "$@"' > /usr/bin/tf_serving_entrypoint.sh \
 && chmod +x /usr/bin/tf_serving_entrypoint.sh
-
-# CMD is required to run on Heroku
-CMD ["/usr/bin/tf_serving_entrypoint.sh"]
