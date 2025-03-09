@@ -1,7 +1,7 @@
 FROM tensorflow/serving
 
 # Copy model dan konfigurasi
-COPY ./ouputs/serving_model/ /models/hatespeech-prediction-model
+COPY ./ouputs/serving_model /models/hatespeech-prediction-model
 COPY ./config /model_config
 
 # Set environment variables
