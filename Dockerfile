@@ -8,6 +8,7 @@ COPY ./config /model_config
 ENV MODEL_NAME=hatespeech-prediction-model
 # ENV MODEL_BASE_PATH=/models
 ENV MONITORING_CONFIG="/model_config/prometheus.config"
+ENV PORT=8080
 
 RUN echo '#!/bin/bash \n\n\
 tensorflow_model_server \
